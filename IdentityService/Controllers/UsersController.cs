@@ -14,6 +14,7 @@ namespace Product.Api.Controllers
         {
         }
 
+        //صرفا برای اینکه به دیتابیس رجوع نکنم نوشم 
         #region Post (Get User)
         [Microsoft.AspNetCore.Mvc.HttpPost(template: "/GetUser")]
         public async Task<IActionResult> GetUser(string username, string password)
