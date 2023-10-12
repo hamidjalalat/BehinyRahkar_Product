@@ -24,7 +24,7 @@ namespace Product.Domain.Models
 
          
         [System.ComponentModel.DataAnnotations.Required]
-        public string Price { get; set; }
+        public double Price { get; set; }
          
 
          

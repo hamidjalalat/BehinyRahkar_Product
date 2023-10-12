@@ -14,19 +14,6 @@ namespace Product.Api.Controllers
         {
         }
 
-        #region Post (Create user)
-        [Microsoft.AspNetCore.Mvc.HttpPost(template: "/CreateUser")]
-
-        public async Task<Microsoft.AspNetCore.Mvc.IActionResult>
-            CreateUser(CreateProductCommand request)
-        {
-            var result =
-                await Mediator.Send(request);
-
-            return FluentResult(result: result);
-        }
-        #endregion /Post (Create user)
-
         #region Post (Get User)
         [Microsoft.AspNetCore.Mvc.HttpPost(template: "/GetUser")]
         public async Task<IActionResult> GetUser(string username, string password)
