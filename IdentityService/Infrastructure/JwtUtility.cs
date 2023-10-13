@@ -21,7 +21,7 @@ namespace Product.Infrastructure.Infrastructure
         }
     
 
-        public static async Task attachUserToContextByToken(HttpContext context, MediatR.IMediator mediator, string token,string secretKey)
+        public static async Task AttachUserToContextByToken(HttpContext context, MediatR.IMediator mediator, string token,string secretKey)
         {
             try
             {

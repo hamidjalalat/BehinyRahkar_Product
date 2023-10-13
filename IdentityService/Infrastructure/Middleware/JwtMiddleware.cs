@@ -29,7 +29,7 @@ namespace Product.Infrastructure.Middleware
 
             if (string.IsNullOrWhiteSpace(token)==false)
             {
-              await  JwtUtility.attachUserToContextByToken(context, mediator,token, "behinrahkarbehinrahkhansarihamidjalalat");
+              await  JwtUtility.AttachUserToContextByToken(context, mediator,token, "behinrahkarbehinrahkhansarihamidjalalat");
             }
 
             await Next(context);
